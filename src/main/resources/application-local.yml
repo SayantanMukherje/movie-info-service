@@ -1,0 +1,21 @@
+app:
+  description: Welcome to ${spring.application.name}
+db:
+  connection: "{connectionString: 'http://Local', userName: 'local', password: 'localPass'}"
+  host: 127.0.0.1
+  port: 1200
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 8082
+spring:
+  application:
+    name: movie-info-service
+    
+tmdb:
+  api:
+    key: 5e4ee85b9fbc1138a5a780841315a183
+    url: https://api.themoviedb.org/3/movie/
